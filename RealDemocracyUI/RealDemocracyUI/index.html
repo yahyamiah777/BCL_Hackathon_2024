@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Democracy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+        }
+
+        h1,
+        h2 {
+            margin: 5px 0;
+        }
+
+        .chart {
+            width: 600px;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            /* Ensures bars don't exceed container */
+        }
+
+        .bar {
+            display: inline-block;
+            width: 20px;
+            /* Width of each bar */
+            margin-right: 5px;
+            text-align: center;
+            color: white;
+            overflow: hidden;
+            /* Ensures sections don't exceed bar width */
+        }
+
+        .bar-section {
+            display: inline-block;
+            width: 100%;
+            /* Full width of the section */
+            height: 100%;
+            /* Full height of the section */
+            transition: width 0.3s ease;
+            /* Smooth animation */
+        }
+
+        /* Add more section classes as needed */
+
+        .bar-label {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Real Democracy</h1>
+        <h2>Let's help you make the right choice!</h2>
+    </header>
+
+    
+
+    <h2>Enter what you care about!</h2>
+    <input type="text" id="query" name="Name" placeholder="Sewage...">
+    <button type="submit" id="btnq">Submit</button>
+
+    <div id="chartContainer" class="chart"></div>
+    <div id="sumContainer" class="summary"></div>
+    <div id="questionContainer" class="question"></div>
+
+    <script src="script.js"></script>
+    <script src="vote.js"></script>
+    <script src="party.js"></script>
+</body>
+
+</html>

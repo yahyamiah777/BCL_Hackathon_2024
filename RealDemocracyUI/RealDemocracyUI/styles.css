@@ -1,0 +1,29 @@
+header.h1 {
+    text-align: center;
+    color: black;
+}
+body.h1 {
+    size: 20;
+    color: black;
+    font: bold;
+
+}
+
+label[for=estate]{
+    color: black;
+}
+
+
+body.button {
+    size: 200px;
+}
+
+
+body {
+    text-align: center;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+}
